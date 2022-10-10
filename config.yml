@@ -1,0 +1,56 @@
+baseURL: https://jimsu2012.github.io
+languageCode: en-us
+title: Jim Su
+theme: PaperMod
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  showReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowRssButtonInSectionTermList: true
+
+  profileMode:
+    enabled: true
+    title: "Jim Su"
+    subtitle: >
+      Hi, I'm Jim. I'm a 2nd year CS student at the University of Florida.  
+
+      Ping me about startups, network effects, and system design.
+    imageUrl: jim.jpg
+    imageTitle: "Portrait photo of Jim"
+
+  socialIcons:
+    - name: github
+      url: https://github.com/jimsu2012
+    - name: twitter
+      url: https://twitter.com/yimothysu
+
+menu:
+  main:
+    - identifier: blog
+      name: Blog
+      url: blog
+      weight: 5
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
